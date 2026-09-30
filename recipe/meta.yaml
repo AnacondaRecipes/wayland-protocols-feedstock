@@ -19,7 +19,7 @@ requirements:
     - ninja-base
     - pkg-config
   host:
-    - wayland
+    - wayland {{ wayland }}
 
 test:
   requires:
@@ -52,3 +52,5 @@ about:
 extra:
   recipe-maintainers:
     - ryanvolz
+  skip-lints:
+    - python_build_tools_in_host
